@@ -1,0 +1,183 @@
+.cart-main-box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.cart-heading {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.cart-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.cart-item {
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    box-shadow: 0px 0px 30px -6px grey;
+}
+
+.cart-item-img {
+    max-height: 150px;
+}
+
+.left {
+    max-width: 25%;
+    min-width: 25%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.right {
+    max-width: 40%;
+    min-width: 40%;
+    padding: 10px;
+}
+
+.quantity-box {
+    max-width: 120px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.total-price-of-product {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select-quantity {
+    background: none;
+}
+
+.empty-cart {
+    background-color: #FF9900;
+    height: 400px;
+    box-shadow: 0px 0 30px -6px grey;
+}
+
+.empty-cart-left-div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-cart-img {
+    max-width: 500px;
+}
+
+.empty-card-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-cart-btn {
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.cart-remove-item-btn {
+    background: none;
+    color: #0000FF;
+    cursor: pointer;
+    height: 20px;
+}
+
+.total-amount-box {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 30px -6px grey;
+    margin-bottom: 25px;
+}
+
+.checkout-btn{
+    width: 150px;
+    background-color: #FF9900;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rupee-icon{
+    height: 0.7em;
+    width: 0.8em;
+}
+
+.total-amount-details{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8rem;
+    padding: 10px;
+    width: 50%;
+    align-items: flex-end;
+}
+
+.total-amt-checkout-box{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+@media only screen and (max-width:800px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right {
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .total-price-of-product {
+        width: 100%;
+        justify-content: center;
+    }
+    .empty-cart-img {
+        max-width: 300px;
+        order: 1;
+    }
+    .empty-cart {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .empty-cart-left-div {
+        width: 100%;
+        order: 2
+    }
+    .total-amount-box{
+        flex-direction: column;
+    }
+    .total-amount-details{
+        width: 100%;
+    }
+}

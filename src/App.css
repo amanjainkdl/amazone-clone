@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: #000000;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 180px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flexCol {
   display: flex;
-  flex-direction: column;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
   align-items: center;
+}
+
+nav ul li {
+  padding: 8px;
+  color: aliceblue;
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+}
+
+nav input, select, button {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.anchor-logo {
+  display: flex;
+  width: 100%;
+}
+
+.logo-li {
+  width: 15%;
+  display: flex;
+}
+
+.search-box-li {
+  width: 60%;
+}
+
+.search-box-li select {
+  width: 8%;
+  background-color: silver;
+  border-radius: 5px 0px 0px 5px;
+  min-width: 45px;
+}
+
+.search-box-li input {
+  width: 82%;
+  font-size: 18px;
+}
+
+.search-box-li button {
+  width: 10%;
+  font-size: 24px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #FF9900;
+  border-radius: 0px 5px 5px 0px;
+  min-width: 45px;
+}
+
+.cart {
+  font-size: 35px;
   color: white;
+  background: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.theme-border {
+  /* border: 3px solid #FF9900;
+  border-radius: 10px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.select-border {
+  /* border-right: 3px solid #FF9900; */
+}
+
+.upperText {
+  font-size: 12px;
+}
+
+.username {
+  width: 5%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.link-style-none {
+  color: white;
+  text-decoration: none;
+}
+
+.anchor {
+  background: transparent;
+  width: 50px;
+  font-size: 25px;
+  color: white;
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-none {
+  display: none;
+}
+
+@media only screen and (max-width:800px) {
+  nav ul {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .search-box-li {
+    width: 90%;
+  }
+  nav li, .username {
+    width: 90%;
+  }
+  nav li a {
+    display: flex;
+  }
+  .anchor {
+    display: flex;
+  }
+  .logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .display-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-li {
+    width: 90%;
   }
 }

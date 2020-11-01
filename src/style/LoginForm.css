@@ -1,0 +1,201 @@
+.login-nav-img {
+    width: 150px;
+    padding: 10px;
+}
+
+.login-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form-container {
+    border: 1px solid #767676;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 5px #FF9900;
+}
+
+.login-form-input {
+    width: 300px;
+    height: 25px;
+}
+
+.login-form-btn {
+    height: 30px;
+    background-color: #FF9900;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.form-heading {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-4 {
+    margin-top: 4px;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
+}
+
+.mtl-5-13{
+    margin: 5px 0px 0px 13px !important;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.form-hlp-btn {
+    text-align: start;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.error {
+    font-size: 13px;
+    color: red;
+    margin-bottom: 5px;
+}
+
+.create-accnt-div {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-top: 1px solid #767676;
+}
+
+.create-accnt-div span {
+    position: relative;
+    top: -13px;
+    background: #ffffff;
+    width: 130px;
+    text-align: center;
+    font-size: 13px;
+    color: #767676;
+    font-weight: 400;
+}
+
+.create-accnt-btn {
+    width: 380px;
+    height: 35px;
+    background-color: #e7e9ec;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.phone-num-field {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.phone-num-field select {
+    width: 45px;
+    height: 29px;
+    background-color: silver;
+    margin-right: 5px;
+}
+
+.phone-num-field input {
+    width: 250px !important;
+}
+
+.error-box {
+    display: flex;
+    border: 1px solid red;
+    height: 100px;
+    width: 365px;
+    margin: 0px auto 10px;
+    border-radius: 5px;
+}
+
+.error-box .error-left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.danger{
+    color: red;
+}
+
+.error-box .error-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.error-heading{
+    color: red;
+}
+
+@media only screen and (max-width: 400px) {
+    .login-form-container {
+        width: 80%;
+    }
+    .login-form-input {
+        width: 100%
+    }
+    .create-accnt-div {
+        width: 90%;
+    }
+    .create-accnt-link {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+    }
+    .phone-num-field select {
+        width: 20%;
+    }
+    .phone-num-field input {
+        width: 80% !important;
+    }
+    .error-box {
+        width: 95%;
+    }
+}
